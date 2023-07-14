@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TodoActivity">
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/teal_700"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Add Task"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/btn_add"
+       android:rowCount="2"
+       android:columnCount="2" >
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_row="0"
+           android:layout_column="0"
+           android:layout_gravity="fill"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="8dp"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp"
+           android:id="@+id/cv_do">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_gravity="center_horizontal|center_vertical" >
+
+           <ImageView
+               android:layout_width="76dp"
+               android:layout_height="115dp"
+               android:src="@drawable/ic_baseline_create_24" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="DO"
+               android:textStyle="bold" />
+
+
+
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_row="0"
+           android:layout_column="1"
+           android:layout_gravity="fill"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="8dp"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp"
+           android:id="@+id/cv_plan">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_gravity="center_horizontal|center_vertical">
+
+               <ImageView
+                   android:layout_width="83dp"
+                   android:layout_height="105dp"
+                   android:src="@drawable/ic_baseline_content_paste_24" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PLAN"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_row="1"
+           android:layout_column="0"
+           android:layout_gravity="fill"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="8dp"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp"
+           android:id="@+id/cv_delegate">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_gravity="center_horizontal|center_vertical">
+
+               <ImageView
+                   android:layout_width="79dp"
+                   android:layout_height="88dp"
+                   android:src="@drawable/ic_baseline_people_outline_24" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DELEGATE"
+                   android:textStyle="bold" />
+
+
+
+
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_row="1"
+           android:layout_column="1"
+           android:layout_gravity="fill"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:layout_margin="8dp"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp"
+           android:id="@+id/cv_delete">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_gravity="center_horizontal|center_vertical">
+
+               <ImageView
+                   android:layout_width="89dp"
+                   android:layout_height="91dp"
+                   android:src="@drawable/ic_baseline_delete_24" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DELETE"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+   </GridLayout>
+
+</RelativeLayout>

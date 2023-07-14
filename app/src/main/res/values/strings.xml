@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Digital Planner</string>
+    <string name="classify">
+        <item>Important</item>
+        <item>Urgent</item>
+    </string>
+    <string name="navigation_drawer_open"> open navigation drawer</string>
+    <string name="navigation_drawer_close"> close navigation drawer</string>
+    <string name="intro"> Hey. Do you feel overwhelmed by your workload? Responding to emails, work on projects, workout, keep up with technology, have time for your hobbies etc. Well don\'t you worry. I got a solution This app lets you organize your day to day activities using Eisenhower Matrix. </string>
+    <string name="desc">Eisenhower Matrix given by Dr. Dwight D. Eisenhower 34th President of United States, organizes the tasks into 2x2 Matrix based on 4 attributes Important, Not Important, Urgent, Not Urgent. If the task is Important and Urgent it is scheduled in DO quadrant. These are the tasks that you should do. If the task is Important but not Urgent then they are scheduled in PLAN quadrant. You can plan these tasks after completion of DO tasks. Similary if the tasks are Not Important but Urgent you can DELEGATE them and NOT IMPORTANT, NOT URGENT tasks are places in DELETE quadrant</string>
+</resources>
